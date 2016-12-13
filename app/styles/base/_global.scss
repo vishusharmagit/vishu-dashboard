@@ -1,0 +1,17 @@
+// _global.scss
+* {
+  box-sizing: border-box;
+  font-family: $font-family--primary;
+}
+
+body {
+  font-size: $base__font-size;
+  line-height: ($base__line / $base__font-size);
+  font-family: $font-family--primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family--primary;
+}

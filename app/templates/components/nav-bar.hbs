@@ -1,0 +1,47 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {{!-- <a href="#" class="navbar-brand">Vishu Dashboard</a> --}}
+      {{link-to "Vishu Dashboard" 'index' class='navbar-brand'}}
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        {{!-- <li>
+          {{#if session.isAuthenticated}}
+		    <p><a  action 'invalidateSession' >Logout</a></p>}}
+		  {{else}}
+		    <p><a  action 'sessionRequiresAuthentication' >Login</a></p>}}
+		  {{/if}}
+		</li> --}}
+        <li>
+          {{#if session.isAuthenticated}}
+		    <a href="#" class="nav-item nav-link" {{action 'invalidateSession'}} >Logout</a>
+		  {{/if}}
+        </li>
+        <li>
+          {{!-- <a href="#" class="nav-item nav-link">Dashboard</a> --}}
+          {{link-to "Dashboard" 'dashboard' class='nav-item nav-link'}}
+        </li>
+        <li>
+          <a href="#" class="nav-item nav-link">Settings</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav">
+      	<li>
+          {{#if session.isAuthenticated}}
+		    <a href="#" class="nav-item nav-link">Welcome, {{session.currentUser.name}}</a>
+		  {{/if}}
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <input type="text" class="form-control" placeholder="Search...">
+      </form>
+    </div>
+  </div>
+</nav>

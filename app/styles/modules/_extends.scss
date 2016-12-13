@@ -1,0 +1,32 @@
+// _extend.scss
+.campaign-show-page {
+  margin: 10px 0 25px;
+
+  .portlet.light.bg-inverse {
+    background: $white;
+  }
+
+  .portlet.light.bordered {
+    border: 0 !important;
+    // border-top: 3px solid palette(turquoise, lighter) !important;
+    border-top: 2px solid palette(turquoise, lightest) !important;
+    border-radius: 1px !important;
+
+    box-shadow:
+            inset 0 1px 0 rgba(255,255,255,0.03),
+            0 2px 2px rgba(0,0,0,0.03),
+            0 0 4px 1px rgba(0,0,0,0.03);
+  }
+
+  .panel-body {
+    background: #f5f6f7;
+  }
+
+  .col-md-9 > p {
+    margin-bottom: 15px;
+  }
+
+  .well {
+    background: #fcfcfc;
+  }
+}

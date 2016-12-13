@@ -1,0 +1,270 @@
+// _sidebar.scss
+/* scrollbar styling */
+.page-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.page-sidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.page-sidebar::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}// Sidebar
+
+// To Calvin, clean up here as well, thanks.
+
+.page-sidebar {
+  height: 100%;
+}
+
+.page-sidebar-fixed {
+  .page-sidebar {
+    top: 0;
+    height: 100%;
+    background: #3fc0be;
+    border-radius: 0;
+  }
+
+  .page-sidebar-menu > li:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+.page-sidebar .page-sidebar-menu {
+   >li>a {
+    letter-spacing: .5px;
+    font-weight: 300;
+  }
+
+  >li>a,
+  >li>a>i,
+  >li:hover>a,
+  >li:hover>a>i,
+  >li>a.active {
+    color: #ffffff;
+  }
+
+  >li>a.active {
+    border-left: none !important;
+    margin-left: 0;
+  }
+
+  >li:hover>a,
+  >li>a.active {
+    background: rgba(51,51,51,0.1);
+  }
+
+  >li>a>[class*= fa-] {
+    margin-right: 4px;
+  }
+}
+
+.page-sidebar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+
+  min-height: 100vh;
+  overflow-y: auto;
+
+  .dropdown-menu {
+    width: 100%;
+    position: relative;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: palette(turquoise, mid);
+
+    li.divider {
+      opacity: .5;
+    }
+
+    > li > a {
+      padding: 12px 15px;
+    }
+
+    > li > a,
+    > li > a > [class^="icon-"] {
+      color: $white;
+      letter-spacing: $letter-space;
+    }
+
+    > li > a:hover,
+    > li > a:focus {
+      color: $white;
+      background: palette(turquoise, dark);
+    }
+  }
+}
+
+.page-sidebar-fixed {
+  .page-sidebar {
+    top: 0;
+    height: 100%;
+    background: $turquoise;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-sidebar,
+  .page-sidebar.in {
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse.collapse {
+    display: flex !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .page-sidebar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse.collapse {
+    height: 100% !important;
+  }
+}
+
+.profile-sidebar-portlet {
+  min-height: 200px;
+}
+
+.page-sidebar .profile-usertitle-name {
+  color: $white;
+  font-weight: $font-weight--light;
+  letter-spacing: 0;
+}
+
+.page-sidebar .page-sidebar-menu {
+   > li > a {
+    margin-top: 0;
+    letter-spacing: $letter-space;
+    font-weight: $font-weight--light;
+  }
+
+  > li > a > .title {
+    font-size: $base__font-size;
+  }
+
+  > li > a,
+  > li > a > i[class*="icon-"],
+  > li:hover > a,
+  > li:hover > a > i[class*="icon-"],
+  > li > a.active,
+  > li.open > a {
+    color: $white;
+  }
+
+  > li:hover > a {
+    background: palette(turquoise, dark);
+  }
+
+  > li.open > a {
+    background: palette(turquoise, darker);
+  }
+
+  > li > a.active {
+    border-left: none !important;
+    margin-left: 0;
+    background: palette(turquoise, darker);
+  }
+
+  > li.heading {
+    height: 40px;
+    padding: 15px 15px 10px;
+  }
+
+  .font-default {
+    color: palette(turquoise, darker) !important;
+    letter-spacing: $letter-space;
+  }
+}
+.page-sidebar ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  -webkit-box-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+
+  min-height: 400px;
+
+  li {
+    width: 100%;
+  }
+}
+
+.page-sidebar .admin-sidebar {
+  min-height: 240px;
+
+  li {
+    max-width: 105px;
+    flex-basis: 50%;
+    margin: 0 0 8px 8px;
+    box-sizing: border-box;
+  }
+
+  li > a {
+    margin: 0;
+    padding: 20px 10px 15px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 3px !important;
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+  }
+
+  li > a:hover {
+    border: 1px solid $ceramic;
+  }
+
+  li > a > [class^="icon-"] {
+    display: block;
+    margin: 0 auto 15px;
+  }
+
+  > li > a.active {
+    border: 1px solid $ceramic !important;
+    background: rgba(51, 51, 51, 0.3);
+  }
+
+  li > a > span {
+    display: block;
+    line-height: 1.6;
+  }
+}
+
+.logout-menu {
+  width: 100%;
+  text-align: center;
+}
+
+.logout-menu a {
+  display: block;
+  color: $white;
+  width: inherit;
+  padding: 15px 0;
+  background: rgba(0,0,0,.15);
+  transition: background .25s
+}
+
+.logout-menu a:hover {
+  text-decoration: none;
+  background: rgba(0,0,0,.25);
+}

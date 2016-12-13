@@ -1,0 +1,60 @@
+.light-theme {
+  .disabled .prev, .disabled .next {
+    cursor: not-allowed;
+  }
+}
+
+.pagination-wrapper {
+  margin: 5px 0 20px;
+
+  .pagination-dropdown {
+    width: 50px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    /*border: 1px solid green;
+    z-index: 5;*/   /*Vishu*/
+  }
+
+  .pagination-total {
+    color: #545454;
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .pagination-page-count {
+    margin-top: 5px;
+  }
+}
+
+.light-theme {
+  a, span {
+    border: 1px solid #d1d1d1;
+    border-radius: 2px !important;
+    box-shadow: none;
+    background: none;
+  }
+
+  a:hover {
+    border-color: #555;
+  }
+
+  .current {
+    border-color: #d1d1d1;
+    box-shadow: none;
+    // background: $turquoise;
+    background: $turquoise;
+    font-weight: bold;
+  }
+
+  .disabled {
+    border-color: #d1d1d1;
+  }
+
+  .disabled .current {
+    background: $white;
+    color: #d1d1d1;
+    border-color: #e9e9e9;
+    font-weight: normal;
+  }
+}

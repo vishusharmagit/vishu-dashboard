@@ -1,0 +1,22 @@
+.comp-lookup-code-modal {
+  .modal {
+    .modal-body {
+      .ember-basic-dropdown {
+        margin-bottom: 10px;
+      }
+
+      .col-md-3 {
+        text-align: center;
+        transition: opacity .2s ease;
+
+        p {
+          margin-top: 0;
+        }
+      }
+
+      .row:hover .col-md-3:not(:hover) {
+        opacity: 0.1;
+      }
+    }
+  }
+}

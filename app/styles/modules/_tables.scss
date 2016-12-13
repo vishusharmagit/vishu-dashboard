@@ -1,0 +1,19 @@
+.table-responsive .table.table-light {
+  margin-top: 15px;
+}
+
+.table.table-light {
+  > thead > tr > th {
+    font-family: $font-family--primary;
+    font-weight: $font-weight--medium;
+    letter-spacing: $letter-space;
+  }
+
+  > tbody > tr > td {
+    color: $black;
+  }
+}
+
+.table td, .table th {
+  font-size: $base__font-size;
+}

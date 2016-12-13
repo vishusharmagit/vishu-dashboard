@@ -1,0 +1,98 @@
+// _button.scss
+.btn {
+  @include bg-colors($ui-colors);
+}
+
+.btn {
+  font-weight: $font-weight--medium;
+  letter-spacing: $letter-space;
+  box-shadow: 0 2px 2px #eeeeee !important;
+
+  // &:hover {
+  //   box-shadow: 0 1px 1px #eeeeee;
+  // }
+
+  &.green,
+  &.red {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  }
+}
+
+.btn .caret {
+  margin-top: 8px;
+  margin-left: 6px;
+}
+
+.btn.btn-outline.green {
+  color: palette(turquoise, lighter);
+  border-color: palette(turquoise, lighter);
+
+  i {
+    padding: 0 0 0 3px;
+  }
+
+  &:hover, &:focus {
+    background: palette(turquoise, lighter);
+  }
+}
+
+.btn.green {
+  // padding: 8px 12px;
+  font-weight: $font-weight--bold;
+  background: $turquoise;
+
+  i {
+    padding-right: 5px;
+  }
+
+  &:not(.btn-outline).active {
+    border: 0;
+    background: $turquoise;
+  }
+
+  &:hover {
+    background: palette(turquoise, dark);
+    box-shadow: none;
+  }
+}
+
+.btn.green:not(.btn-outline),
+.btn.green {
+  background: $turquoise;
+}
+
+// .btn.green:not(.btn-outline),
+// .btn.green:hover {
+//   box-shadow: none;
+// }
+
+.query-btn-group {
+  margin-top: 5px;
+}
+
+.query-reset-btn {
+  margin: 0 10px;
+}
+
+// Labels
+.label {
+  font-family: $font-family--primary;
+  font-weight: $font-weight--medium;
+  letter-spacing: $letter-space;
+  text-transform: capitalize;
+
+  @include bg-colors($ui-colors);
+}
+
+.label.label-sm {
+  padding: 4px 7px;
+  font-size: 11px;
+}
+
+.btn.point-label {
+  margin-right: 12px;
+}
+
+.btn.spaced {
+  margin-left: 12px;
+}

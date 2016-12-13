@@ -1,0 +1,80 @@
+// @import 'ember-power-select/themes/bootstrap';
+$ember-power-select-line-height: 2.5;
+$ember-power-select-border-color: #ccc;
+$ember-power-select-trigger-icon-color: #999;
+$ember-power-select-focus-outline: 0;
+$ember-power-select-opened-border-radius: 3px;
+// $ember-power-select-dropdown-margin: 8px;
+$ember-power-select-dropdown-box-shadow: rgba(black, 0.172549) 0px 6px 12px 0px;
+$ember-power-select-highlighted-color: inherit;
+$ember-power-select-highlighted-background: #f5f5f5;
+$ember-power-select-selected-background: #f5f5f5;
+$ember-power-select-focus-border-color: #66afe9;
+$ember-power-select-focus-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+$ember-power-select-trigger-contiguous-border: 1px solid $ember-power-select-border-color !default;
+
+//@import '../ember-power-select';
+
+.ember-basic-dropdown-trigger,
+.ember-power-select-option {
+  font-size: $base__font-size;
+}
+
+.ember-power-select-dropdown {
+  .ember-basic-dropdown--in-place &, &.ember-basic-dropdown--below, &.ember-basic-dropdown--above {
+    transform: translateY(0);
+  }
+}
+
+.ember-basic-dropdown-trigger {
+  border-color: #c2cad8;
+  border-radius: 2px !important;
+  transition: border-color ease-in-out .15s;
+
+  &:hover {
+    border-color: #2780f8;
+  }
+
+  &:active, &:focus {
+    border-color: #2780f8;
+    box-shadow: 0 0 7px rgba(39,128,248,.15);
+    outline-offset: 0;
+    outline: 0;
+  }
+}
+
+.ember-power-select-status-icon {
+  right: 8px;
+}
+
+.ember-basic-dropdown--in-place .ember-power-select-dropdown {
+  // border: 1px solid #d8d8d8;
+  border-bottom-left-radius: 2px !important;
+  border-bottom-right-radius: 2px !important;
+}
+
+.overview-dropdowns .daterangepicker-input.form-control {
+  border-radius: 2px !important;
+}
+
+.daterangepicker-input.form-control {
+  // border-radius: 5px !important;
+  border: 1px solid #c5c5c5;
+}
+
+.daterangepicker-input {
+  border-color: #c2cad8;
+  color: $black;
+  border-radius: 2px !important;
+
+  &:hover {
+    border-color: #2780f8;
+  }
+
+  &:active, &:focus {
+    border-color: #2780f8;
+    box-shadow: 0 0 7px rgba(39,128,248,.15);
+    outline-offset: 0;
+    outline: 0;
+  }
+}

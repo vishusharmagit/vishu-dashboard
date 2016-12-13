@@ -1,0 +1,7 @@
+.comp-popover-box {
+  display: inline-block;
+  margin: 6px 8px;
+  .content-box {
+    z-index: 999;
+  }
+}

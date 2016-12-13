@@ -1,0 +1,203 @@
+// _forms.scss
+.form-wizard .steps {
+  margin-bottom: 0;
+  background: transparent;
+
+  > li > a.step {
+    color: $black;
+    background: transparent;
+  }
+
+  > li > a.step > .number {
+    width: 40px;
+    height: 40px;
+    padding: 7px 10px;
+    background: #f8f8f8;
+  }
+
+  > li.done > a.step .number,
+  .progress-bar-success {
+    background: palette(turquoise, light);
+  }
+
+  > li.active > a.step .number {
+    background: palette(turquoise, darker);
+  }
+}
+
+.new-campaign-date-range.form-group {
+  margin-bottom: 0;
+}
+
+.form-wizard .progress {
+  height: 6px;
+  margin-bottom: 0;
+  background: palette(turquoise, lightest);
+
+  .progress-bar {
+    box-shadow: none;
+  }
+}
+
+.form {
+  .form-body {
+    padding: 0;
+  }
+
+  .form-actions {
+    padding: 20px 0;
+    background: transparent;
+    border: 0;
+  }
+
+  .page-head .page-title > h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    // padding: 25px 20px 10px;
+  }
+}
+
+.tab-content {
+  background: $white;
+  padding: 15px 25px 25px;
+
+  .form-actions {
+    padding: 20px 0 0;
+
+    a.btn.disabled {
+      cursor: not-allowed;
+    }
+  }
+}
+
+.form-wizard .portlet.light {
+  // padding: 0 0 10px 0;
+  padding: 0;
+
+  &.bg-inverse .portlet-body {
+    padding: 15px 20px 20px;
+  }
+
+  &.bg-inverse .portlet-title {
+    padding: 4px 18px;
+  }
+
+  .portlet-body {
+    padding-top: 0;
+    // background: #f5f6f7;
+    background: #f6f8f8;
+  }
+
+  .portlet-body .portlet-body {
+    background: $white;
+  }
+
+  .portlet-title {
+    margin: 0;
+    border-bottom: 0;
+    font-weight: $font-weight--bold;
+    letter-spacing: $letter-space*3;
+    background: #e5e5e5;
+
+    i {
+      margin-right: 3px;
+    }
+  }
+
+  &.bg-inverse {
+    background: transparent;
+  }
+
+  &.bordered {
+    border: 0 !important;
+    border-radius: 4px !important;
+  }
+}
+
+.campaign-radio-btn label,
+.form-group.form-md-line-input label,
+.form-horizontal .form-group.form-md-line-input label{
+  font-size: $base__font-size;
+  line-height: inherit;
+}
+
+.form-horizontal .control-label {
+  font-size: $base__font-size;
+}
+
+.more-entries-form-btn,
+.more-entries-form-btn.btn.green:not(.btn-outline),
+.more-entries-form-btn.btn.green:not(.btn-outline):hover {
+  background: $turquoise;
+  border: 0;
+  margin-top: 10px;
+  padding: 10px 15px;
+  color: $white;
+}
+
+.cancel-form-btn,
+.btn.red:not(.btn-outline),
+.btn.red:not(.btn-outline):active,
+.btn.red:not(.btn-outline):active:focus,
+.btn.red:not(.btn-outline):focus,
+.btn.red:not(.btn-outline):hover {
+  color: #e7505a;
+  border: 0;
+  background: transparent;
+}
+
+.form-group.form-md-line-input .form-control,
+.daterangepicker-input {
+  font-size: $base__font-size !important;
+}
+
+/* form survey questions */
+.display-survey-title {
+  margin: 10px 0 !important;
+}
+
+.panel {
+  border: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  .panel-heading {
+    background: #e5e5e5;
+    padding: 12px 16px;
+    &:hover {
+      cursor: pointer;
+    };
+    .panel-title {
+      font-weight: $font-weight--bold;
+      font-size: $base__font-size+1;
+    }
+  }
+
+
+  .form-group.form-md-line-input {
+    .input-icon.right > i {
+      // margin: 0;
+      color: $white;
+    }
+
+    .form-control {
+      // padding-top: 0;
+      color: $white;
+      border-bottom: 1px solid $white;
+    }
+  }
+}
+
+/* query-section */
+.form-horizontal .control-label {
+  text-align: left;
+
+  & + div {
+    // padding-top: 5px;
+  }
+}
+
+.form-wizard .disabled:hover {
+  cursor: not-allowed;
+}

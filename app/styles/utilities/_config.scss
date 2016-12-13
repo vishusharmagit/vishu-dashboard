@@ -1,0 +1,65 @@
+// _config.scss
+
+// Font Stack
+$font-url--google        : 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800';
+$font-family--primary    : 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weight
+// $font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 600;
+$font-weight--mid-bold   : 700;
+$font-weight--ultra-bold : 800;
+
+// Text styles
+$base__font-size : 13px;
+$base__line      : 24px;
+$letter-space    : .1px;
+
+// Descriptive Base Colors
+// White-ish Colours
+$white          : #ffffff;
+$ceramic        : #FEFFFB;
+$selago         : #E9EFFB;
+$catskill       : #F2F6F9;
+
+$black          : #2b2b2b;
+$turquoise      : #3fc0be;
+$maize          : #fede47;
+$dark-blue-grey : #515454;
+$orange         : #de884e;
+$soft-red       : #e66874;
+$navy-blue      : #18325a;
+$grass-green    : #a8cd5e;
+$grey-cararra   : #fafafa;
+
+// Color Palette Modifiers
+$palettes: (
+  turquoise: (
+    lightest : lighten($turquoise, 40%),
+    lighter : lighten($turquoise, 16%),
+    light : lighten($turquoise, 8%),
+    base : $turquoise,
+    mid : darken($turquoise, 4%),
+    dark : darken($turquoise, 8%),
+    darker : darken($turquoise, 16%)
+  ),
+    grey: (
+    lighter : lighten($dark-blue-grey, 16%),
+    light : lighten($dark-blue-grey, 8%),
+    base : $dark-blue-grey,
+    dark : darken($dark-blue-grey, 8%),
+    darker : darken($dark-blue-grey, 16%)
+  )
+);
+
+// UI Colors
+$ui-colors: (
+  // default :
+  success : $grass-green,
+  danger  : $soft-red,
+  warning : $maize,
+  // info    :
+);

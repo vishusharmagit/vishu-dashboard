@@ -1,0 +1,114 @@
+// _navbar.scss
+.page-header.navbar {
+  height: 60px;
+  min-height: 60px;
+  border-radius: 0;
+  border-bottom: 0;
+  background: $ceramic;
+  // display: none;
+
+  .page-top {
+    height: inherit;
+  }
+
+  .page-logo {
+    padding-top: 15px;
+    // color: $white;
+  }
+
+  .menu-toggler {
+    background-image: none;
+
+      &.responsive-toggler {
+      // float: left;
+      color: $white;
+      text-align: center;
+      margin: 25px 35px 10px 15px;
+      display: none; /* Responsive nav not needed, for now */
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .page-header.navbar .page-top {
+    background: transparent;
+    display: inline-block;
+    clear: none;
+    width: auto;
+    text-align: right;
+  }
+  .page-header.navbar .page-actions {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .page-header.navbar .page-top {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .page-header.navbar {
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+
+  .page-sidebar.navbar-collapse.in {
+    margin: 0 0 20px 0;
+  }
+
+  .page-sidebar {
+    margin: 0 0 20px 0;
+    .profile-sidebar-portlet {
+      display: none;
+    }
+    .page-sidebar-menu {
+      margin: 0;
+      li:first-child a {
+        border-top: 0;
+      }
+    }
+  }
+}
+
+// To Calvin, clean up here please.
+@media only screen and (max-width: 991px) {
+  .page-header.navbar {
+    position: relative;
+    // top: 0;
+    // z-index: 1;
+  }
+
+  .page-sidebar {
+    margin: 0;
+
+    &.navbar-collapse.in {
+      margin: 0;
+    }
+
+    .profile-sidebar-portlet {
+      display: none;
+    }
+
+    .page-sidebar-menu {
+      margin: 0;
+
+      li a {
+        border-top: 0;
+      }
+
+      li:first-child a {
+        border-top: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-header.navbar {
+    width: auto;
+    margin-left: 235px;
+  }
+}

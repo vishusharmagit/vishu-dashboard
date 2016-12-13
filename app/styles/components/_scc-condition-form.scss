@@ -1,0 +1,59 @@
+.comp-scc-condition-form {
+  .seperator {
+    margin: 0 6px;
+  }
+
+  .tnx-attr {
+    .tnx-attr-name, .tnx-attr-value {
+      display: inline-block;
+      width: 36%;
+    }
+  }
+
+  .tnx-count {
+    .tnx-count-text {
+      margin-top: -6px;
+      display: inline-block;
+    }
+
+    .tnx-count-options {
+      width: 30%;
+      display: inline-block;
+      margin-left: 5px;
+      margin-right: 0;
+    }
+
+    .tnx-count-value {
+      width: 30%;
+      float: right;
+      display: inline-block;
+    }
+  }
+
+  .tnx-time-of-day {
+    .tnx-time-input {
+      width: 25%;
+      display: inline-block;
+    }
+
+    .tnx-time-week-list {
+      width: 16%;
+      display: inline-block;
+    }
+  }
+
+  .span-text {
+    display: inline-block;
+    margin-top: 6px;
+  }
+  .tnx-attr-weight {
+    width: 80%;
+    float: right;
+    display: inline-block;
+  }
+
+  .weight-setting {
+    display: inline-block;
+    width: 35%;
+  }
+}

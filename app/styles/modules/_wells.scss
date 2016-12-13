@@ -1,0 +1,30 @@
+.well {
+  padding: 10px 20px;
+  // margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.form-horizontal .form-group.form-md-line-input {
+  padding-top: 5px;
+  margin: 0 0 10px 0;
+}
+
+.well .btn.btn-default {
+  margin-top: 5px;
+
+  border: 0;
+  border-radius: 3px;
+}
+
+@media (max-width: 767px) {
+  .well .btn.pull-right {
+    float: left !important;
+  }
+}
+
+.well .form-md-checkboxes label:nth-child(n+2) {
+  font-size: 13px;
+
+  letter-spacing: $letter-space;
+}

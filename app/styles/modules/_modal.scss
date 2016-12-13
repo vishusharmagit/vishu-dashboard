@@ -1,0 +1,12 @@
+.modal {
+  overflow-y: hidden !important;
+  .modal-content {
+    // max-height: 500px;
+    .modal-body {
+      max-height: 450px;
+      min-height: 400px;
+      overflow-y: scroll;
+
+    }
+  }
+}
