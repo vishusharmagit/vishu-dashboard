@@ -7,25 +7,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {{!-- <a href="#" class="navbar-brand">Vishu Dashboard</a> --}}
       {{link-to "Vishu Dashboard" 'index' class='navbar-brand'}}
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        {{!-- <li>
-          {{#if session.isAuthenticated}}
-		    <p><a  action 'invalidateSession' >Logout</a></p>}}
-		  {{else}}
-		    <p><a  action 'sessionRequiresAuthentication' >Login</a></p>}}
-		  {{/if}}
-		</li> --}}
         <li>
           {{#if session.isAuthenticated}}
 		    <a href="#" class="nav-item nav-link" {{action 'invalidateSession'}} >Logout</a>
 		  {{/if}}
         </li>
         <li>
-          {{!-- <a href="#" class="nav-item nav-link">Dashboard</a> --}}
           {{link-to "Dashboard" 'dashboard' class='nav-item nav-link'}}
         </li>
         <li>

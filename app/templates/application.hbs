@@ -1,9 +1,5 @@
 {{!-- <h2>OM</h2> --}}
-{{!-- {{nav-bar}} --}}
 {{#if session.isAuthenticated}}
-{{!-- {{nav-bar}} --}}
-{{!-- {{/if}} --}}
-
 <body class="nav-md">
     <div class="container body">
       <div class="main_container">
@@ -13,13 +9,11 @@
               <a href="javascript:;" class="site_title"><i class="fa fa-paw"></i> <span>{{link-to "Vishu Dashboard!" 'index'}}</span></a>
             </div>
             <div class="clearfix"></div>
-
             <!-- sidebar menu -->
             {{side-bar}}
             <!-- /sidebar menu -->
           </div>
         </div>
-
         <!-- top navigation -->
         	{{top-nav-bar}}
         <!-- /top navigation -->
