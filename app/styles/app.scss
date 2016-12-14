@@ -209,10 +209,18 @@
 @import 'components/ember-power-select';
 @import 'components/scc-condition-form';*/
 
+/*Vishu : This one is working but login container become only white also not svg content not visible.*/
+/*body .container.login-page {
+    background: white;
+}*/
+
+/*.test  {
+    background: white;
+}*/
 /*Vishu : It is working but effecting internal side bar template.*/
-body .login-page {
-    background-color: white;
-}
+/*body {
+    background: white;
+}*/
 
 #loginbox {
     margin-top: 30px;

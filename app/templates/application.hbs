@@ -1,41 +1,44 @@
 {{!-- <h2>OM</h2> --}}
 {{#if session.isAuthenticated}}
 <body class="nav-md">
-    <div class="container body">
-      <div class="main_container">
-        <div class="col-md-3 left_col">
-          <div class="left_col scroll-view">
-            <div class="navbar nav_title" style="border: 0;">
-              <a href="javascript:;" class="site_title"><i class="fa fa-paw"></i> <span>{{link-to "Vishu Dashboard!" 'index'}}</span></a>
-            </div>
-            <div class="clearfix"></div>
-            <!-- sidebar menu -->
-            {{side-bar}}
-            <!-- /sidebar menu -->
-          </div>
-        </div>
-        <!-- top navigation -->
-        	{{top-nav-bar}}
-        <!-- /top navigation -->
-
-        <!-- page content -->
-        <div class="right_col" role="main">
-					{{outlet}}
-        </div>
-        <!-- /page content -->
-
-        <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            Dashboard Admin Template by <a href="">Vishu</a>
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="javascript:;" class="site_title"><i class="fa fa-paw"></i> <span>{{link-to "Vishu Dashboard!" 'index'}}</span></a>
           </div>
           <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
+          <!-- sidebar menu -->
+          {{side-bar}}
+          <!-- /sidebar menu -->
+        </div>
       </div>
+      <!-- top navigation -->
+      	{{top-nav-bar}}
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+				{{outlet}}
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">
+          Dashboard Admin Template by <a href="">Vishu</a>
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
     </div>
-  </body>
+  </div>
+</body>
 {{else}}
  {{!-- Vishu:For login we required it. --}}
+ {{!-- <body class=""> --}}
  {{outlet}}
+{{!-- </body> --}}
+
 {{/if}}

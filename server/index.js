@@ -64,7 +64,8 @@ module.exports = function(app) {
   		user: { 
   			id: 1,
   			name:"Vishu",
-  			email: 'vishusharmagit@gmail.com' 
+  			email: 'vishusharmagit@gmail.com',
+        img:"http://vignette2.wikia.nocookie.net/althistory/images/a/a6/Venstre_(Denmark)_Logo.png/revision/latest?cb=20081224190313" 
   		}
   	});
 	});
