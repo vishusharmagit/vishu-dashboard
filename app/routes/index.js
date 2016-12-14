@@ -10,6 +10,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+ //Not Working.
  var $ = Ember.$;
 
 		var CURRENT_URL = window.location.href.split('#')[0].split('?')[0],
