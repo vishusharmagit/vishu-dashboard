@@ -46,5 +46,8 @@
     "loader.js": "^4.0.10",
     "morgan": "^1.7.0",
     "vishu-components": "git+https://github.com/vishusharmagit/vishu-components.git"
+  },
+  "dependencies": {
+    "shelljs": "^0.7.5"
   }
 }
