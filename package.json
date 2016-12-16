@@ -45,6 +45,7 @@
     "glob": "^4.5.3",
     "loader.js": "^4.0.10",
     "morgan": "^1.7.0",
+    "vishu-dashboard-theme": "git+https://github.com/vishusharmagit/vishu-dashboard-theme.git",
     "vishu-components": "git+https://github.com/vishusharmagit/vishu-components.git"
   },
   "dependencies": {
