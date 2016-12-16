@@ -6,7 +6,7 @@ export default Ember.Component.extend({
 
 		var CURRENT_URL = window.location.href.split('#')[0].split('?')[0],
     // $BODY = $('body'),
-    $BODY = $('#testB'),
+    $BODY = $('#dashboard-body'),
     $MENU_TOGGLE = $('#menu_toggle'),
     $SIDEBAR_MENU = $('#sidebar-menu'),
     $SIDEBAR_FOOTER = $('.sidebar-footer'),
